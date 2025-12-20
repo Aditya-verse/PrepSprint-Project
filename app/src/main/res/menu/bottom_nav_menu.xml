@@ -4,16 +4,29 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_home" />
+        android:title="@string/title_home"
+        android:checkable="true"
+        android:iconTintMode="add"/>
 
     <item
         android:id="@+id/navigation_dashboard"
         android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_dashboard" />
+        android:title="@string/title_dashboard"
+        android:checkable="true"
+        android:iconTintMode="add"/>
 
     <item
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/title_notifications" />
+        android:title="@string/title_notifications"
+        android:checkable="true"
+        android:iconTintMode="add"/>
+
+    <item
+        android:id="@+id/navigation_ai_chat"
+        android:icon="@drawable/chat_bot"
+        android:title="AI_chat"
+        android:checkable="true"
+        android:iconTintMode="add"/>
 
 </menu>

@@ -8,14 +8,151 @@
     android:background="#161626">
 
     <TextView
-        android:id="@+id/text_home"
+        android:id="@+id/text_hello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Hello,"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="18dp"
         android:layout_marginEnd="8dp"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aditya"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toStartOf="@id/text_hello"
+        app:layout_constraintTop_toTopOf="@id/text_hello"
+        app:layout_constraintBottom_toBottomOf="@id/text_hello"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/hello"
+        app:layout_constraintStart_toStartOf="@id/text_username"
+        app:layout_constraintTop_toTopOf="@id/text_username"
+        app:layout_constraintBottom_toBottomOf="@id/text_username"
+        android:layout_marginStart="70dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/streak_card"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        app:cardCornerRadius="12dp"
+        android:backgroundTint="#2C8A1B1B"
+        app:strokeColor="#920D0D"
+        app:strokeWidth="2dp"
+        app:layout_constraintTop_toBottomOf="@id/text_username">
+
+       <ImageView
+           android:id="@+id/ic_fire_icon"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:src="@drawable/ic_fire"
+           android:layout_gravity="center_vertical"
+           android:layout_marginStart="18dp"/>
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="76dp"
+            android:layout_gravity="center_vertical"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Days 🔥"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="current streak"
+                android:textSize="14sp"
+                android:textColor="#FF9800"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/motivation_line"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        app:cardCornerRadius="12dp"
+        android:backgroundTint="#0183DC"
+        app:cardElevation="2dp"
+        app:strokeColor="#811C3597"
+        app:strokeWidth="4dp"
+        app:layout_constraintTop_toBottomOf="@id/streak_card">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 'Keep pushing forward!' "
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="18dp"
+            android:clickable="true"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/progress_card"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        app:cardCornerRadius="12dp"
+        android:backgroundTint="#6323253E"
+        app:strokeColor="#44B3B3B3"
+        app:strokeWidth="2dp"
+        app:layout_constraintTop_toBottomOf="@id/motivation_line">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOUR PROGRESS"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#979191"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="20dp"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="START LEARNING"
+        android:textColor="#979191"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress_card"
+        android:layout_marginStart="20dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

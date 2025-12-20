@@ -70,55 +70,52 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tilEmail"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="66dp"
             android:layout_marginTop="32dp"
-            android:hint="Email"
-            app:boxBackgroundColor="#1F1F35"
+            android:hint="Enter email"
+            android:elevation="5dp"
+            app:hintTextColor="@color/purple_200"
+            app:boxStrokeColor="@color/purple_500"
             app:boxCornerRadiusBottomEnd="16dp"
             app:boxCornerRadiusBottomStart="16dp"
             app:boxCornerRadiusTopEnd="16dp"
             app:boxCornerRadiusTopStart="16dp"
-            app:boxStrokeWidth="0dp"
-            app:boxStrokeWidthFocused="1dp"
-            app:hintTextColor="#666680"
+            app:cursorColor="@color/purple_200"
             app:layout_constraintTop_toBottomOf="@id/tvSubtitle">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:textColor="#FFFFFF"
-                android:paddingTop="20dp"
-                android:paddingBottom="20dp"/>
+                android:textColor="#FFFFFF" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tilPassword"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="20dp"
             android:hint="Password"
-            app:boxBackgroundColor="#1F1F35"
+            android:elevation="5dp"
+            app:hintTextColor="@color/purple_200"
+            app:boxStrokeColor="@color/purple_500"
             app:boxCornerRadiusBottomEnd="16dp"
             app:boxCornerRadiusBottomStart="16dp"
             app:boxCornerRadiusTopEnd="16dp"
             app:boxCornerRadiusTopStart="16dp"
-            app:boxStrokeWidth="0dp"
-            app:endIconMode="password_toggle"
-            app:endIconTint="#666680"
-            app:hintTextColor="#666680"
+            app:cursorColor="@color/purple_200"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/white"
             app:layout_constraintTop_toBottomOf="@id/tilEmail">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:textColor="#FFFFFF"
-                android:paddingTop="20dp"
-                android:paddingBottom="20dp"/>
+                android:textColor="#FFFFFF" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout
@@ -151,7 +148,9 @@
                     android:layout_width="18dp"
                     android:layout_height="18dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/google" />
+                    android:src="@drawable/google"
+                    android:clickable="true"
+                    android:contextClickable="true"/>
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
@@ -166,7 +165,9 @@
                     android:layout_width="18dp"
                     android:layout_height="18dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/facebook" />
+                    android:src="@drawable/facebook"
+                    android:clickable="true"
+                    android:contextClickable="true"/>
             </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
 
