@@ -16,6 +16,12 @@
         android:name="com.techtitans.prepsprint_project.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/navigation_ocr"
+        android:name="com.techtitans.prepsprint_project.ui.OCR.OCRFragment"
+        android:label="OCR"
+        tools:layout="@layout/fragment_ocr" />
+
 
     <fragment
         android:id="@+id/navigation_notifications"
