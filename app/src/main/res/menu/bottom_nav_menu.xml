@@ -25,8 +25,9 @@
     <item
         android:id="@+id/navigation_ai_chat"
         android:icon="@drawable/chat_bot"
-        android:title="AI_chat"
-        android:checkable="true"
-        android:iconTintMode="add"/>
+        android:title="AI"
+        android:checkable="true" />
+
+
 
 </menu>
