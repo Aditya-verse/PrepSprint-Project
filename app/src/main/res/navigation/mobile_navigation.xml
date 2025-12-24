@@ -13,7 +13,7 @@
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.techtitans.prepsprint_project.ui.dashboard.DashboardFragment"
-        android:label="Dashboard" />
+        android:label="AudioPrep AI" />
 
     <fragment
         android:id="@+id/navigation_notifications"
@@ -24,6 +24,11 @@
         android:id="@+id/navigation_ai_chat"
         android:name="com.techtitans.prepsprint_project.ui.ai.AiChatFragment"
         android:label="AI Chat" />
+
+    <fragment
+        android:id="@+id/userprofileFragment"
+        android:name="com.techtitans.prepsprint_project.ui.userprofile.Userprofile"
+        android:label="User Profile" />
 
 
 </navigation>
