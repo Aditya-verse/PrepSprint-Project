@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/navigation_home"
@@ -21,6 +22,12 @@
         android:title="@string/title_notifications"
         android:checkable="true"
         android:iconTintMode="add"/>
+    <item
+        android:id="@+id/navigation_ocr"
+        android:icon="@drawable/ic_camera"
+        android:title="OCR"
+        tools:ignore="HardcodedText" />
+
 
     <item
         android:id="@+id/navigation_ai_chat"

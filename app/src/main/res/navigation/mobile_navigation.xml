@@ -29,6 +29,10 @@
         android:id="@+id/userprofileFragment"
         android:name="com.techtitans.prepsprint_project.ui.userprofile.Userprofile"
         android:label="User Profile" />
+    <fragment
+        android:id="@+id/navigation_ocr"
+        android:name="com.techtitans.prepsprint_project.ui.OCR.OCRFragment"
+        android:label="OCR Scanner" />
 
 
 </navigation>
