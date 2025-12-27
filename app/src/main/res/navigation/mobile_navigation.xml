@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
 <navigation
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/mobile_navigation"
+    xmlns:tools="http://schemas.android.com/tools"
     app:startDestination="@id/navigation_home">
 
     <fragment
@@ -11,14 +10,19 @@
         android:label="Home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.techtitans.prepsprint_project.ui.dashboard.DashboardFragment"
-        android:label="AudioPrep AI" />
+        android:id="@+id/navigation_quiz"
+        android:name="com.techtitans.prepsprint_project.ui.quiz.QuizFragment"
+        android:label="Quiz" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.techtitans.prepsprint_project.ui.notifications.NotificationsFragment"
-        android:label="Notifications" />
+        android:id="@+id/navigation_scan"
+        android:name="com.techtitans.prepsprint_project.ui.OCR.OCRFragment"
+        android:label="Scan" />
+
+    <fragment
+        android:id="@+id/navigation_learn"
+        android:name="com.techtitans.prepsprint_project.ui.learn.LearningFragment"
+        android:label="Learn" />
 
     <fragment
         android:id="@+id/navigation_ai_chat"
@@ -28,11 +32,7 @@
     <fragment
         android:id="@+id/userprofileFragment"
         android:name="com.techtitans.prepsprint_project.ui.userprofile.Userprofile"
-        android:label="User Profile" />
-    <fragment
-        android:id="@+id/navigation_ocr"
-        android:name="com.techtitans.prepsprint_project.ui.OCR.OCRFragment"
-        android:label="OCR Scanner" />
-
+        android:label="Profile"
+        tools:layout="@layout/fragment_userprofile" />
 
 </navigation>

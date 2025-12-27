@@ -1,0 +1,10 @@
+<!-- Or download a subtle purple/blue wave PNG and place in drawable -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp" android:height="600dp"
+    android:viewportWidth="400" android:viewportHeight="600">
+    <path android:fillColor="#80B8B5FF"
+        android:pathData="M0,300 Q100,100 200,300 T400,300 L400,600 L0,600 Z" />
+    <path android:fillColor="#4080FFFF"
+        android:pathData="M0,400 Q150,200 300,400 T400,400 L400,600 L0,600 Z"
+        android:alpha="0.4" />
+</vector>

@@ -7,4 +7,85 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="bg_dark">#0D111D</color>
+    <color name="input_bg">#1A202E</color>
+    <color name="input_stroke">#2A3347</color>
+    <color name="text_secondary">#8E94A4</color>
+    <color name="button_green">#0B4D3E</color>
+    <color name="button_text">#7FA8A0</color>
+    <color name="icon_green_bg">#0B211F</color>
+    <color name="icon_green_tint">#2DD4BF</color>
+    <color name="streak_bg">#232936</color>
+    <color name="app_bg">#0D111D</color>
+    <color name="chat_bubble_bg">#1A2235</color>
+    <color name="input_field_bg">#232936</color>
+    <color name="bottom_nav_bg">#161C2C</color>
+    <color name="chat_bg">#0D111D</color>
+
+    <color name="input_bar_bg">#161C2C</color>
+
+    <color name="bot_icon_bg">#10B981</color>
+
+    <color name="send_icon_tint">#6366F1</color>
+    <color name="quiz_purple_bg">#1E2235</color>
+    <color name="quiz_purple_icon_tint">#818CF8</color>
+    <color name="quiz_button_bg">#312E81</color>
+    <color name="bot_bubble_bg">#1A2235</color>
+    <color name="bot_bubble_stroke">#2A3347</color>
+    <color name="input_box_inside_bg">#232936</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_hint_muted">#5E6679</color>
+    <color name="accent_green">#10B981</color>
+    <color name="accent_teal">#2DD4BF</color>
+    <color name="accent_indigo">#6366F1</color>
+    <color name="button_bg_green">#0F5B4B</color>
+    <color name="streak_gold">#EAB308</color>
+    <color name="ui_border">#2A3347</color>
+    <color name="text_main">#FFFFFF</color>
+    <color name="text_sub">#8E94A4</color>
+    <color name="text_hint">#5E6679</color>
+    <color name="button_text_teal">#8BB9B1</color>
+
+    <color name="bg">#0D111D</color>
+    <color name="bg_navy">#0D111D</color>
+    <color name="card_dark">#161C2C</color>
+    <color name="brand_purple">#6366F1</color>
+    <color name="text_muted">#8E94A4</color>
+    <color name="stroke_color">#2A3347</color>
+
+    <color name="bg_main">#0D111D</color>
+    <color name="bg_bottom_nav">#161C2C</color>
+    <color name="bg_secondary_ui">#232936</color>
+    <color name="bg_input_box">#1A202E</color>
+    <color name="bg_black_deep">#0D0D0D</color>
+    <color name="login_card_bg">#1A1A24</color>
+    <color name="stroke_grey">#333344</color>
+    <color name="brand_purple_light">#C7B9FF</color>
+    <color name="text_hint_grey">#6E6E7E</color>
+
+    <color name="forgot_password_purple">#818CF8</color>
+    <color name="brand_indigo">#6366F1</color>
+    <color name="nav_active_purple">#818CF8</color>
+    <color name="btn_quiz_bg">#312E81</color>
+    <color name="bot_green">#10B981</color>
+    <color name="input_box_bg">#232936</color>
+
+    <color name="text_primary">#FFFFFF</color>
+    <color name="border_line">#2A3347</color>
+    <color name="progress_multi_color">#818CF8</color>
+
+    <color name="profile_bg">#0D111D</color>
+    <color name="card_bg">#1A2235</color>
+    <color name="card_stroke">#2A3347</color>
+    <color name="avatar_purple">#6366F1</color>
+    <color name="points_bg">#232936</color>
+    <color name="points_text">#EAB308</color>
+    <color name="switch_thumb">#FFFFFF</color>
+    <color name="switch_track_on">#818CF8</color>
+    <color name="logout_red">#EF4444</color>
+    <color name="logout_bg">#1A1A2E</color>
+    <color name="feedback_bg">#232936</color>
+
+
+
 </resources>

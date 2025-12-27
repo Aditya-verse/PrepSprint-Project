@@ -2,37 +2,58 @@ package com.techtitans.prepsprint_project
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.google.android.material.card.MaterialCardView
+import com.techtitans.prepsprint_project.databinding.ActivityLoginPageBinding
 
 class LoginPage : AppCompatActivity() {
+
+    private lateinit var binding: ActivityLoginPageBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_login_page)
-        /*ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }*/
-        val bt_login:Button=findViewById(R.id.btnLogin)
-        val google_signin_card: MaterialCardView=findViewById(R.id.google_click_view)
-        val facebook_signin_card: MaterialCardView=findViewById(R.id.facebook_click_view)
 
-        bt_login.setOnClickListener(){
-            val intent=Intent(this,MainActivity::class.java)
-            startActivity(intent)
+        // 1. Hide ActionBar for the custom premium look
+        supportActionBar?.hide()
+
+        // 2. Enable modern Edge-to-Edge display
+        enableEdgeToEdge()
+
+        // 3. Initialize ViewBinding
+        binding = ActivityLoginPageBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        setupClickListeners()
+    }
+
+    private fun setupClickListeners() {
+        // Main Login Button with basic validation
+        binding.btnLogin.setOnClickListener {
+            val email = binding.tilEmail.editText?.text.toString()
+            val password = binding.tilPassword.editText?.text.toString()
+
+            if (email.isNotEmpty() && password.isNotEmpty()) {
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+                finish() // Prevents user from going back to Login screen after logging in
+            } else {
+                showToast("Please enter email and password")
+            }
         }
-        google_signin_card.setOnClickListener {
-            Toast.makeText(this,"Google sign in clicked", Toast.LENGTH_LONG).show()
+
+        // Social Login - Google (Uses the ID added in XML)
+        binding.googleClickView.setOnClickListener {
+            showToast("Google sign in clicked")
         }
-        facebook_signin_card.setOnClickListener {
-            Toast.makeText(this,"facebook sign in clicked", Toast.LENGTH_LONG).show()
+
+        // Social Login - Facebook (Uses the ID added in XML)
+        binding.facebookClickView.setOnClickListener {
+            showToast("Facebook sign in clicked")
         }
+    }
+
+    private fun showToast(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 }

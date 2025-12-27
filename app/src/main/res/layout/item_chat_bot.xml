@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:cardBackgroundColor="@color/bot_icon_bg"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="0dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_smart_toy"
+            app:tint="#FFFFFF" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/shape_bot_bubble"
+        android:maxWidth="300dp"
+        android:padding="16dp"
+        android:text="Hi! I am your PrepSprint AI tutor. I can help you summarize notes, explain topics, or find the latest info on the web. What do you need?"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:lineSpacingExtra="4dp"/>
+
+</LinearLayout>
