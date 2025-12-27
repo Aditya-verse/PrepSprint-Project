@@ -50,6 +50,7 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.activity)
     testImplementation(libs.junit)
+    implementation("com.google.android.material:material:1.11.0")
     implementation("com.google.mlkit:text-recognition:16.0.1")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.6")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.6")

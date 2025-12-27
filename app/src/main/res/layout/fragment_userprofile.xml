@@ -28,6 +28,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
+                android:id="@+id/ivEdit"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:background="@drawable/shape_circle_dar"
@@ -53,6 +54,7 @@
                 android:padding="24dp">
 
                 <TextView
+                    android:id="@+id/tvAvatar"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:background="@drawable/shape_circle_avatar"
@@ -63,6 +65,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tvName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -72,6 +75,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tvEmail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="dfg"
@@ -79,6 +83,7 @@
                     android:textSize="14sp" />
 
                 <TextView
+                    android:id="@+id/tvPoints"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -107,6 +112,7 @@
                     app:drawableStartCompat="@drawable/call" />
 
                 <TextView
+                    android:id="@+id/tvBio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -128,6 +134,7 @@
                     app:drawableStartCompat="@drawable/ic_phone" />
 
                 <TextView
+                    android:id="@+id/tvPhone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -184,6 +191,7 @@
                         android:textSize="16sp" />
 
                     <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchDarkTheme"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true"
@@ -216,6 +224,7 @@
                         android:textSize="16sp" />
 
                     <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchNotifications"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true"
@@ -248,6 +257,7 @@
                         android:textSize="16sp" />
 
                     <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchSoundEffects"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="false" />
@@ -256,11 +266,15 @@
                 <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/card_stroke" />
 
                 <LinearLayout
+                    android:id="@+id/layoutPrivacySecurity"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:padding="16dp">
+                    android:padding="16dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground">
 
                     <ImageView
                         android:layout_width="24dp"
@@ -308,7 +322,7 @@
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginTop="12dp"
-            android:layout_marginBottom="32dp"
+            android:layout_marginBottom="48dp"
             android:backgroundTint="#1A1115"
             android:text="Log Out"
             android:textAllCaps="false"

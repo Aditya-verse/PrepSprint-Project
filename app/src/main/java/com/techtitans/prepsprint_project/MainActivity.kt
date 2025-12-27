@@ -35,13 +35,32 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
-        binding.profileIcon.setOnClickListener {
+        // UPDATED: Click listener on the Container (CardView) instead of just the icon
+        // This ensures the ripple effect is contained within the circle nicely
+        binding.profileContainer.setOnClickListener {
             navController.navigate(R.id.userprofileFragment)
         }
 
-        // Keep the bar moving whenever destination changes
+        // Keep the bar moving whenever destination changes & Handle Profile Blue Circle
+        // ... inside onCreate ...
+
         navController.addOnDestinationChangedListener { _, destination, _ ->
+
+            // 1. Existing Indicator Animation
             animateIndicator(destination.id)
+
+            // 2. NEW: Subtle "Ring" indication for Profile
+            if (destination.id == R.id.userprofileFragment) {
+                // Active: Transparent BG, Blue Icon, Blue Ring (Stroke)
+                binding.profileContainer.strokeWidth = 4 // Thickness of the ring (in pixels)
+                binding.profileContainer.setCardBackgroundColor(Color.TRANSPARENT)
+                binding.profileIcon.setColorFilter(Color.parseColor("#6366F1")) // Icon turns blue too
+            } else {
+                // Inactive: No Ring, Grey Icon
+                binding.profileContainer.strokeWidth = 0
+                binding.profileContainer.setCardBackgroundColor(Color.TRANSPARENT)
+                binding.profileIcon.setColorFilter(Color.parseColor("#8E94A4"))
+            }
         }
     }
 
