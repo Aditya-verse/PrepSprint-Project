@@ -84,11 +84,14 @@
             android:layout_marginTop="20dp"
             android:text="Generate Quiz"
             android:textAllCaps="false"
-            android:textColor="#818CF8"
+            android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:cornerRadius="12dp"
-            app:backgroundTint="#312E81" />
+
+            android:background="@drawable/btn_gradient_purple"
+            app:backgroundTint="@null"
+            app:cornerRadius="12dp"/>
+
 
     </LinearLayout>
 
